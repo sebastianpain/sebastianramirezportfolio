@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  </head>
+  <body>
+    
+    <header class="main-header">
+      <img class="logo" src="img/sebalogo.jpg" alt="Logo">
+      <nav class="nav-menu">
+        <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="#quien-soy">Quien soy</a></li>
+            <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+           
+            
+          </ul>
+          <script>
+            const toggleButton = document.createElement('button');
+            toggleButton.textContent = 'Cambiar Modo';
+            toggleButton.classList.add('toggle-button');
+          
+            // Función para cambiar el modo
+            function toggleMode() {
+              document.body.classList.toggle('dark-mode');
+              document.body.style.backgroundImage = 'none';
+            }
+          
+            toggleButton.addEventListener('click', toggleMode);
+            document.body.appendChild(toggleButton);
+          </script>
+        </nav>
+            
+
+    </header>
+    
+    <main>
+      <section id="quien-soy" class="section">
+        <div class="container">
+          <div class="quien-soy-inner">
+            <div class="quien-soy-foto">
+              <img class="foto" src="img/seba.png" alt="Foto de Seba Pain" />
+            </div>
+
+            <div class="animation">Soy Sebastian Ramirez</div>
+            <p class="quien-soy-text">
+              Soy desarrollador full stack.
+              Estudié la carrera de desarrollo full stack en Coderhouse.
+              Disfruto programar, tomar mate y escuchar música.</p>
+           </div>
+          </div>
+        
+      </section>
+    
+      
+      
+      
+      <section id="proyectos" class="section section-proyecto">
+        <div class="container2">
+          <h2 class="section-title">Primer Proyecto - HTML y CSS</h2>
+          <div>
+            <img class="aurarecords" src="img/aurarecords.png" alt="aurarecords">
+            
+          </div>
+          <p class="section-text">
+            Aura Records - Pagina web de Home Studio realizada con HTML y CSS
+          </p>
+          <div class="btns">
+            <a target="_blank" class="btn" href="http://pf-ramirez.netlify.app">Ver proyecto <i class="bi bi-box-arrow-up-right"></i></a>
+          </div>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <span class="fa fa-star"></span>
+        </div>
+        <img src="img/navegador.png" alt="htmlcss" class="htmlcss">
+      </section>
+      <section id="proyectos2" class="section section-proyecto2">
+        <div class="container3">
+          <h2 class="section-title">Segundo Proyecto - HTML - CSS - JS</h2>
+          <div>
+            <img class="aurarecords" src="img/ironshop.png" alt="ironshop">
+          </div>
+          <p class="section-text">
+            IRON SHOP - Ecommerce de kiosco realizado con HTML , CSS Y Javascript.
+          </p>
+          <div class="btns">
+            <a target="_blank" class="btn" href="https://jsfinalsebapain.vercel.app/">Ver proyecto <i class="bi bi-box-arrow-up-right"></i></a>
+          </div>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+        </div>
+          <div>
+            <img class="imgcarpet" src="img/carpeta.png" alt="htmlcssjs">
+          </div>
+        </div>
+      </section>
+      <section id="proyectos3" class="section section-proyecto3">
+        <div class="container3">
+          <h2 class="section-title">Tercer Proyecto - React - JS</h2>
+          <div>
+            <img class="aurarecords" src="img/tiendaropa.png" alt="Tiendaropa">
+          </div>
+          <p class="section-text">
+            Tienda ya - Ecommerce de tienda de ropa realizado con React y JS con base de datos en Firebase.
+          </p>
+          <div class="btns">
+            <a target="_blank" class="btn" href="https://reactfinal-ramirez-s.vercel.app/">Ver proyecto <i class="bi bi-box-arrow-up-right"></i></a>
+          </div>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+        </div>
+          <div>
+            <img class="imgcarpet" src="img/carpeta.png" alt="htmlcssjs">
+          </div>
+        </div>
+      </section>      
+      <section id="apoya-mi-contenido" class="section">
+        <div class="container">
+        
+          </div>
+      </section>
+    </main>
+    <footer class="section section-dark">
+<div class="container">
+    <div class="section-inner">
+        <h2 class="section-title">Seguime</h2>
+        <div class="social">
+            <ul><a target="-blank" href="https://www.linkedin.com/in/sebastianramirez89/"><i class="bi bi-linkedin"></i></a>
+            <a target="-blank" href="https://github.com/sebastianpain"><i class="bi bi-github"></i></a>
+            
+            <title>Formulario de Contacto</title>
+            </head>
+            <form action="https://formspree.io/f/mdoqokda" method="POST">
+              <ul>
+                <li>
+                  <label for="email">Your email:</label>
+                  <input type="email" id="email" name="email" required>
+                </li>
+                <li>
+                  <label for="message">Your message:</label>
+                  <textarea class="textareaform" id="message" name="message" rows="4" required></textarea>
+                </li>
+                <!-- Otros campos del formulario pueden agregarse aquí -->
+                <li>
+                  <button type="submit">Send</button>
+                </li>
+              </ul>
+            </form>
+              
+                
+</body>
+</html>
+    </footer>
+  </body>
+</html>

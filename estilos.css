@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Secular+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+--ff-title: 'Dela Gothic One', sans-serif;
+--ff-text:'Rubik', sans-serif;
+--clr-black: #1c1c1c;
+--clr-white: #ececec;
+--bg-white:url("img/blanco.jpg");
+--bg-black:url("img/Negro.jpg");
+--bg-yellow:url("img/yellow.jpg");
+}
+.section {
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Efecto de cambio de color al hacer hover */
+.section:hover {
+  background-color: #f709b3;
+  transition: background-color 0.3s ease-in-out;
+}
+@keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+  
+  @keyframes blink-caret {
+    100% {
+      border-color: transparent;
+    }
+  }
+  /* When you change the amount of characters in the h1, you have to change 
+  the with: 14ch and  steps(14, end), if there is 14 characters, put 14, 
+  if there is 20 put 20 */
+  .animation {
+    font: bold 100% Consolas, Monaco, monospace;
+    border-right: .1em solid black;
+    width: 23.20ch;
+    margin: 1em 1em;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-animation: typing 5s steps(20, end),
+                 blink-caret .20s step-start infinite alternate;
+                 animation-iteration-count: infinite;
+                
+  }
+/* Estilos para el modo noche */
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  /* Estilos específicos para elementos en modo noche */
+  .dark-mode .section-dark {
+    background-color: #111;
+  }
+body{
+    background-image: var(--bg-white);
+    color: var(--clr-black);
+    font-family: var(--ff-text);
+}
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+ul{
+    list-style-type: none;
+}
+h1,h2,h3{
+    font-family: var(--ff-title);
+}
+.container{
+    display: flex;
+    max-width: 1000rem;
+    margin: 0 auto;
+    padding-inline: 1rem ;
+}
+.container2{
+    color: #000000;
+    min-width: 10px;
+    margin:1px;
+    
+}
+.htmlcss{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+    width: 120px;
+    margin:auto;
+    overflow: hidden;
+    
+}
+    
+    
+.textareaform{
+    margin: auto;
+    width: 50px; 
+    height: 50px;
+    inline-size: auto;
+    }
+    
+
+
+.aurarecords{
+    display: flex;
+    size-adjust: 2px;
+    
+}
+
+
+.container3{
+    min-width: 10px;
+    margin:1px;
+    
+}
+.main-header {
+display:flex;
+justify-content: space-between;
+align-items: center;
+padding:3rem;
+padding-bottom: 0;
+
+}
+.logo{
+    max-width: 5rem;
+}
+.nav-list{
+    display: flex;
+    gap: 1rem;
+    
+}
+.nav-link{
+    position: relative;
+    padding: 10px;
+}
+.nav-link::after{
+ content: '';
+ position: absolute;
+ left:0;
+ right: 0;
+ top:100%;
+ height: 2px;
+ background-color: var(--clr-black);
+ transition: .2s;
+ transform: scaleX(0);
+}
+.nav-link-bold{
+    font-weight:500;
+}
+
+ .nav-link:hover::after{
+ transform: scaleX(1);
+ }
+ .nav-link-bold{
+font-weight: 500;
+ }
+
+.auracard{
+    margin-left: 250px;
+    height: 500px;
+}
+.navegador{
+width: 120px;
+margin-left: 1300px;
+margin-top: -120px;
+}
+
+.quien-soy-inner {
+    display:grid;
+    grid-template-columns: .35fr 1fr;
+    grid-template-areas:
+    "foto titulo"
+    "foto texto";
+padding-block: 3rem;
+column-gap: 2rem;
+row-gap: 1rem;
+}
+.quien-soy-foto{
+    grid-area:foto;
+    background-image: var(--bg-black);
+    border-radius: 1rem;
+    transform: scale(.9);
+    align-self: start;
+    margin-left: -5px;
+    
+}
+.quien-soy-foto img{
+    max-width:100%;
+    transform: scale(1.1);
+    border-radius: 1rem;
+}
+.quien-soy-title{
+    grid-area:titulo;
+    font-size:3rem;
+    line-height: 1.1;
+}
+.quien-soy-text{
+    grid-area:texto;
+    font-size: 1.2rem;
+    line-height: 1.3;
+}
+
+.section{
+    padding-block: 4rem;
+}
+.section-dark{
+    background-image: var(--bg-black);
+    color: var(--clr-white)
+}
+.section-proyecto{
+    background-color: #2de27e;
+    color: var(--clr-black)
+}
+.section-proyecto2{
+    background-color: rgb(84, 151, 238);
+    color: var(--clr-black)
+}
+section.inner{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap:1rem;
+}
+.section-title{
+    font-size: 3rem;
+    margin-bottom: .75em;
+}
+.section-text {
+    font-size: 1.2rem;
+}
+.btns{
+    display: flex;
+    gap:1rem;
+}
+.checked {
+    color: orange;
+  }
+.btn{
+    padding: .5rem 1rem;
+    font-weight:500;
+    display: flex;
+    gap: .5rem;
+    position: relative;
+    transition: .2s;
+    isolation: isolate;
+}
+.btn:hover{
+    color: var(--clr-white);
+}
+.btn:after{
+ content:'';
+ position: absolute;
+ bottom: 0;
+ left:0;
+ right:0;
+ height:3px;
+ background-color: var(--clr-black);
+ transition: .2s;
+ z-index: -1;
+}
+
+.btn:hover::after{
+    height: 100%;
+}
+.section-dark .btn:hover{
+    color: var(--clr-black);
+}
+
+.section-dark .btn::after{
+    background-color: var(--clr-white);
+}
+.social{
+    display: flex;
+    gap: 1rem
+}
+.social i{
+    font-size: 3rem;
+    padding: 10px;
+}
+.imgcarpet{
+    display: flex;
+    width: 120px;
+    height: 120px;
+    justify-content: space-around;
+    margin-left: 1200px;
+    padding: 20px;
+    
+    } 
+    form {
+        display: flex;
+        max-width: 350px;
+        margin-left: 550px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+        color: #000000;
+      }
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+      input[type="email"],
+      textarea {
+        width: 100%;
+        padding: 28px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        resize: none;
+      }
+      button[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+@media screen and (max-width:800px){
+   
+    .quien-soy-inner{
+        grid-template-areas: 
+        "foto titulo"
+        "texto texto";
+    }
+    .quien-soy-title{
+        align-self: end;
+    }
+}
+button {
+    padding: 12.5px 30px;
+    border: 0;
+    border-radius: 100px;
+    background-color: #2ba8fb;
+    color: #ffffff;
+    font-weight: Bold;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+  }
+  
+  button:hover {
+    background-color: #6fc5ff;
+    box-shadow: 0 0 20px #6fc5ff50;
+    transform: scale(1.1);
+  }
+  
+  button:active {
+    background-color: #3d94cf;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    box-shadow: none;
+    transform: scale(0.98);
+  }
+  /* Estilos para el modo noche */
+body.dark-mode {
+    background-color: #000000;
+    color: #fff;
+  }
+  
+  /* Estilos específicos para elementos en modo noche */
+  .dark-mode .section-dark {
+    background-color: #000000;
+  }
+  .toggle-button{
+    margin-left: 10px;
+    margin-top: 20px;
+
+  }
+@media screen and (max-width: 690px){
+    .container{
+        padding-inline: 1.5rem;
+    }
+    .section{
+        padding-block: 2rem;
+    }
+    .quien-soy-inner{
+        display: flex;
+        flex-direction: column;
+    }
+    .quien-soy-foto img{
+    transform: scale(1.1);
+    }
+    .quien-soy-title{
+        font-size: 2.4rem;
+    }
+    .imgcarpet{
+        display: flex;
+        width: 160px;
+        height: 160px;
+        justify-content: space-around;
+        margin-left: 180px;
+        
+        } 
+        form {
+            display: flex;
+            max-width: 350px;
+            margin-left: 60px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            color: #000000;
+            margin-top: 30px;
+          }
+          .textareaform{
+            inline-size: auto;
+          }
+          ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+          }
+          label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+          }
+          input[type="email"],
+          textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 2px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+          }
+          button[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+          }
+          button[type="submit"]:hover {
+            background-color: #45a049;
+          }
+          .aurarecords{
+            width: 500px;
+            height: 300px;
+            
+            }
+            .quien-soy-foto img {
+                max-width: 50%;
+                transform: scale(1.0);
+                border-radius: 2rem;
+                margin-left: 90px;
+            }
+            body.dark-mode {
+    background-color: #000000;
+    color: #fff;
+  }
+  
+  /* Estilos específicos para elementos en modo noche */
+  .dark-mode .section-dark {
+    background-color: #000000;
+  }
+}
