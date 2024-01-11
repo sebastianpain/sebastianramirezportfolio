@@ -47,7 +47,7 @@
     -webkit-animation: typing 5s steps(20, end),
                  blink-caret .20s step-start infinite alternate;
                  animation-iteration-count: infinite;
-                
+                animation: alternate;
   }
 /* Estilos para el modo noche */
 body.dark-mode {
@@ -110,8 +110,8 @@ h1,h2,h3{
 
     .aurarecords{
       display:flex;
-      width: 390px;
-      height: 226px;
+      width: 1439px;
+      height: 593px;
       
       }
 
